@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.flyingideal.dao.UserMasterDao">
+
+    <resultMap id="userMaster" type="com.flyingideal.entity.UserMaster">
+        <constructor>
+            <idArg column="id" javaType="int" name="id"/>
+            <arg column="email" javaType="String" name="email"/>
+        </constructor>
+        <id property="id" column="id"/>
+        <!--<discriminator javaType="String" column="location">
+            <case value="1" resultType="String"></case>
+        </discriminator>-->
+    </resultMap>
+
+    <sql id="userColumns">
+        ${userMaster.id},name,email,phone,location
+    </sql>
+
+    <!--select id,name,email,phone,location from usermaster-->
+    <select id="getUserByUsername" parameterType="String" resultMap="userMaster">
+        select <include refid="userColumns"/> from usermaster
+        <where>
+            <if test="_parameter!=null or _parameter!=''">
+                name = '${_parameter}'
+            </if>
+        </where>
+    </select>
+
+    <select id="getUsernameById" parameterType="int" resultType="String">
+        select name from usermaster where id='${_parameter}'
+    </select>
+
+    <select id="getAllUsername" resultType="String">
+        select name from usermaster
+    </select>
+
+    <insert id="addUser" parameterType="com.flyingideal.entity.UserMaster">
+        <selectKey keyProperty="id" resultType="int" order="BEFORE">
+            select auto_increment from information_schema.TABLES where TABLE_SCHEMA='test' and table_name='usermaster'
+        </selectKey>
+        insert into usermaster (id, name, email, phone, location) value (#{id}, #{name}, #{email}, #{phone}, #{location})
+    </insert>
+</mapper>

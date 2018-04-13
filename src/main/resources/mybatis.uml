@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="536.0">org.apache.ibatis.cache.decorators.SoftCache</node>
+    <node x="354.0" y="536.0">org.apache.ibatis.cache.decorators.ScheduledCache</node>
+    <node x="0.0" y="369.0">org.apache.ibatis.builder.MapperBuilderAssistant</node>
+    <node x="292.0" y="870.0">org.apache.ibatis.scripting.xmltags.XMLLanguageDriver</node>
+    <node x="482.0" y="369.0">org.apache.ibatis.builder.SqlSourceBuilder</node>
+    <node x="157.0" y="536.0">org.apache.ibatis.cache.impl.PerpetualCache</node>
+    <node x="283.0" y="951.0">org.apache.ibatis.builder.ResultMapResolver</node>
+    <node x="0.0" y="192.0">org.apache.ibatis.scripting.xmltags.WhereSqlNode</node>
+    <node x="279.00000000000006" y="106.0">org.apache.ibatis.scripting.xmltags.StaticTextSqlNode</node>
+    <node x="548.0" y="784.0">org.apache.ibatis.session.SqlSessionFactoryBuilder</node>
+    <node x="0.0" y="870.0">org.apache.ibatis.session.defaults.DefaultSqlSessionFactory</node>
+    <node x="0.0" y="703.0">org.apache.ibatis.builder.annotation.ProviderSqlSource</node>
+    <node x="26.0" y="784.0">org.apache.ibatis.session.SqlSessionFactory</node>
+    <node x="406.0" y="703.0">org.apache.ibatis.scripting.xmltags.DynamicSqlSource</node>
+    <node x="457.0" y="1032.0">org.apache.ibatis.session.Configuration</node>
+    <node x="655.0" y="106.0">org.apache.ibatis.scripting.xmltags.VarDeclSqlNode</node>
+    <node x="615.25" y="273.0">org.apache.ibatis.builder.BaseBuilder</node>
+    <node x="219.0" y="703.0">org.apache.ibatis.scripting.defaults.RawSqlSource</node>
+    <node x="858.0" y="106.0">org.apache.ibatis.scripting.xmltags.ChooseSqlNode</node>
+    <node x="257.0" y="369.0">org.apache.ibatis.builder.xml.XMLMapperBuilder</node>
+    <node x="308.5" y="784.0">org.apache.ibatis.scripting.LanguageDriver</node>
+    <node x="0.0" y="1032.0">org.apache.ibatis.type.TypeAliasRegistry</node>
+    <node x="392.5" y="450.0">org.apache.ibatis.cache.Cache</node>
+    <node x="708.0" y="536.0">org.apache.ibatis.cache.decorators.FifoCache</node>
+    <node x="1432.0" y="106.0">org.apache.ibatis.scripting.xmltags.ForEachSqlNode</node>
+    <node x="933.0" y="369.0">org.apache.ibatis.builder.xml.XMLConfigBuilder</node>
+    <node x="665.0" y="1032.0">org.apache.ibatis.mapping.ResultMap</node>
+    <node x="690.0" y="369.0">org.apache.ibatis.builder.xml.XMLStatementBuilder</node>
+    <node x="195.0" y="192.0">org.apache.ibatis.scripting.xmltags.SetSqlNode</node>
+    <node x="0.0" y="951.0">org.apache.ibatis.builder.xml.XMLIncludeTransformer</node>
+    <node x="1060.0" y="106.0">org.apache.ibatis.scripting.xmltags.MixedSqlNode</node>
+    <node x="558.0" y="536.0">org.apache.ibatis.cache.decorators.LruCache</node>
+    <node x="1148.0" y="369.0">org.apache.ibatis.scripting.xmltags.XMLScriptBuilder</node>
+    <node x="532.0" y="951.0">org.apache.ibatis.mapping.MappedStatement</node>
+    <node x="1253.0" y="106.0">org.apache.ibatis.scripting.xmltags.TextSqlNode</node>
+    <node x="625.0" y="703.0">org.apache.ibatis.builder.StaticSqlSource</node>
+    <node x="238.0" y="1032.0">org.apache.ibatis.mapping.ResultMapping</node>
+    <node x="499.00000000000006" y="106.0">org.apache.ibatis.scripting.xmltags.IfSqlNode</node>
+    <node x="335.5" y="617.0">org.apache.ibatis.mapping.SqlSource</node>
+    <node x="99.0" y="106.0">org.apache.ibatis.scripting.xmltags.TrimSqlNode</node>
+    <node x="784.25" y="0.0">org.apache.ibatis.scripting.xmltags.SqlNode</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.ibatis.cache.decorators.FifoCache" target="org.apache.ibatis.cache.Cache">
+      <point x="0.0" y="-18.0" />
+      <point x="775.0" y="506.0" />
+      <point x="488.79999999999995" y="506.0" />
+      <point x="42.799999999999955" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.builder.xml.XMLConfigBuilder" target="org.apache.ibatis.builder.BaseBuilder">
+      <point x="0.0" y="-18.0" />
+      <point x="1030.5" y="339.0" />
+      <point x="725.5" y="339.0" />
+      <point x="36.75" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.cache.decorators.ScheduledCache" target="org.apache.ibatis.cache.Cache">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.builder.SqlSourceBuilder" target="org.apache.ibatis.builder.BaseBuilder">
+      <point x="0.0" y="-18.0" />
+      <point x="576.0" y="349.0" />
+      <point x="676.5" y="349.0" />
+      <point x="-12.25" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.session.defaults.DefaultSqlSessionFactory" target="org.apache.ibatis.session.SqlSessionFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.TrimSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="179.0" y="56.0" />
+      <point x="792.1875" y="56.0" />
+      <point x="-55.5625" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.VarDeclSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="746.5" y="86.0" />
+      <point x="839.8125" y="86.0" />
+      <point x="-7.9375" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.SetSqlNode" target="org.apache.ibatis.scripting.xmltags.TrimSqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="270.5" y="167.0" />
+      <point x="219.0" y="167.0" />
+      <point x="40.0" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.XMLLanguageDriver" target="org.apache.ibatis.scripting.LanguageDriver">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.StaticTextSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="379.00000000000006" y="66.0" />
+      <point x="808.0625" y="66.0" />
+      <point x="-39.6875" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.cache.decorators.LruCache" target="org.apache.ibatis.cache.Cache">
+      <point x="0.0" y="-18.0" />
+      <point x="623.0" y="516.0" />
+      <point x="467.4000000000001" y="516.0" />
+      <point x="21.40000000000009" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.builder.MapperBuilderAssistant" target="org.apache.ibatis.builder.BaseBuilder">
+      <point x="0.0" y="-18.0" />
+      <point x="118.5" y="329.0" />
+      <point x="627.5" y="329.0" />
+      <point x="-61.25" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.builder.annotation.ProviderSqlSource" target="org.apache.ibatis.mapping.SqlSource">
+      <point x="0.0" y="-18.0" />
+      <point x="99.5" y="673.0" />
+      <point x="352.625" y="673.0" />
+      <point x="-51.375" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.builder.xml.XMLStatementBuilder" target="org.apache.ibatis.builder.BaseBuilder">
+      <point x="0.0" y="-18.0" />
+      <point x="801.5" y="349.0" />
+      <point x="701.0" y="349.0" />
+      <point x="12.25" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.defaults.RawSqlSource" target="org.apache.ibatis.mapping.SqlSource">
+      <point x="0.0" y="-18.0" />
+      <point x="302.5" y="683.0" />
+      <point x="386.875" y="683.0" />
+      <point x="-17.125" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.builder.StaticSqlSource" target="org.apache.ibatis.mapping.SqlSource">
+      <point x="0.0" y="-18.0" />
+      <point x="714.0" y="673.0" />
+      <point x="455.375" y="673.0" />
+      <point x="51.375" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.TextSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="1332.5" y="66.0" />
+      <point x="887.4375" y="66.0" />
+      <point x="39.6875" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.cache.impl.PerpetualCache" target="org.apache.ibatis.cache.Cache">
+      <point x="0.0" y="-18.0" />
+      <point x="245.5" y="516.0" />
+      <point x="424.5999999999999" y="516.0" />
+      <point x="-21.40000000000009" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.builder.xml.XMLMapperBuilder" target="org.apache.ibatis.builder.BaseBuilder">
+      <point x="0.0" y="-18.0" />
+      <point x="359.5" y="339.0" />
+      <point x="652.0" y="339.0" />
+      <point x="-36.75" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.ChooseSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="949.0" y="86.0" />
+      <point x="855.6875" y="86.0" />
+      <point x="7.9375" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.DynamicSqlSource" target="org.apache.ibatis.mapping.SqlSource">
+      <point x="0.0" y="-18.0" />
+      <point x="505.5" y="683.0" />
+      <point x="421.125" y="683.0" />
+      <point x="17.125" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.MixedSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="1146.5" y="76.0" />
+      <point x="871.5625" y="76.0" />
+      <point x="23.8125" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.WhereSqlNode" target="org.apache.ibatis.scripting.xmltags.TrimSqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="87.5" y="167.0" />
+      <point x="139.0" y="167.0" />
+      <point x="-40.0" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.XMLScriptBuilder" target="org.apache.ibatis.builder.BaseBuilder">
+      <point x="0.0" y="-18.0" />
+      <point x="1243.0" y="329.0" />
+      <point x="750.0" y="329.0" />
+      <point x="61.25" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.ForEachSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="1524.0" y="56.0" />
+      <point x="903.3125" y="56.0" />
+      <point x="55.5625" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.scripting.xmltags.IfSqlNode" target="org.apache.ibatis.scripting.xmltags.SqlNode">
+      <point x="0.0" y="-18.0" />
+      <point x="567.0" y="76.0" />
+      <point x="823.9375" y="76.0" />
+      <point x="-23.8125" y="18.0" />
+    </edge>
+    <edge source="org.apache.ibatis.cache.decorators.SoftCache" target="org.apache.ibatis.cache.Cache">
+      <point x="0.0" y="-18.0" />
+      <point x="68.5" y="506.0" />
+      <point x="403.20000000000005" y="506.0" />
+      <point x="-42.799999999999955" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9935661764705882" x="816.0397779833488" y="191.27927581017514" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

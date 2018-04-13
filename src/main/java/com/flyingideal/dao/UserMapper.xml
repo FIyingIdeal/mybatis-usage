@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+   这个mapper文件是通过<mapper class="com.flyingideal.dao.UserMapper">方式配置的，这种配置方式必须将interface与其对应的xml mapper文件放到统一目录下
+   且namespace必须是interface对应的getName()返回值
+ -->
+
+<mapper namespace="com.flyingideal.dao.UserMapper">
+
+    <!-- resultMap是对classpath:mapper/UserMapper.xml中定义的resultMap的引用 -->
+    <select id="getUserById" parameterType="int" resultMap="com.flyingideal.dao.UserMasterDao.userMaster">
+        select id,name,email,phone,location from usermaster
+        <where>
+            <if test="_parameter!=null or _parameter!=''">
+                id = '${_parameter}'
+            </if>
+        </where>
+    </select>
+
+</mapper>
